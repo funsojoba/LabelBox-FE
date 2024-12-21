@@ -1,16 +1,15 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
-
-const baseUrl = import.meta.env.VITE_BASE_URL;
 
 
 export const listTasks = createAsyncThunk(
-    "listTasks", async (thunkApi) => {
+    "list/Tasks", async (_, thunkApi) => {
 
         try {
             const response = await axios.get(
-                baseUrl + "tasks/",
+                BASE_URL + "tasks/",
             )
 
             console.log('RESPONSE ->',response)
