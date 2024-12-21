@@ -31,18 +31,6 @@ const Home = () => {
         handleListTasks()
     }, [])
 
-    // const data = [
-    //     {
-    //         "title": "Title 1", 
-    //         "description": "Description 1",
-    //         "image": "https://plus.unsplash.com/premium_photo-1723759360356-1aa8bcfd02af?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    //     },
-    //     {
-    //         "title": "Title 1", 
-    //         "description": "Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content",
-    //         "image": "https://images.unsplash.com/photo-1731156607191-af929d3d0fe2?q=80&w=2785&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    //     },
-    // ]
 
     const handlePostData = (e) => {
         e.preventDefault()

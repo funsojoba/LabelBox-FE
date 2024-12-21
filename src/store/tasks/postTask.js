@@ -1,9 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-import { BASE_URL } from "./baseUrl";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 import { toast } from "react-toastify";
-
 
 
 
@@ -13,7 +12,7 @@ export const postTask = createAsyncThunk(
     "postTask", async (data, thunkApi) => {
         try {
             const response = await axios.post(
-                BASE_URL + "tasks/", data,
+                baseUrl + "tasks/", data,
             )
             return response.data
         } catch (error) {
